@@ -1,4 +1,6 @@
-﻿using System;
+﻿//--WinAppDriver
+
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
@@ -207,6 +209,7 @@ namespace AccountTabTest
 
             // Verify account created:
             // 1.no internal error generated
+            Thread.Sleep(TimeSpan.FromSeconds(1));
             Assert.AreEqual(allWindowHandles.Count, 2);
 
             // 2.check whether the account is created in search result
